@@ -1,0 +1,13 @@
+    @media screen and (min-width: 400px) and (max-width: 900px) {
+
+        header{
+            width: 50%;
+            height: 30vh;
+            background-color: black;
+        }
+        body{
+            background-color: black;
+        }
+
+
+    }

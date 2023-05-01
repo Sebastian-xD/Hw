@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hw4</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(2,139,139);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+        }
+        .text{
+            width: 60%;
+            height: 150px;
+            background-color: rgb(233,243,243);
+            margin-top: 150px;
+            border-radius: 30px 30px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        form{
+            width:60%;
+            height: 500px;
+            background-color: #FFFFFF;
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+        .field{
+            margin: 40px 0 0;
+            width: 70%;
+            height: 15%;
+            font-size: 30px;
+            padding: 0 20px;
+        }
+        #saveMe{
+            font-size: 30px;
+        }
+        #login{
+            width: 200px;
+            height: 70px;
+            font-size: 30px;
+            margin: 50px 190px;
+            background-color:rgb(233,243,243);
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="text">
+<h1>Вхід в особистий кабінет</h1>
+</div>
+
+<form>
+
+    <input type="text" class="field" placeholder="Логін або email" required name="usernameEmail">
+    <input type="text" class="field" placeholder="Пароль" required name="password">
+
+    <div id="saveMe">
+        <label>Запам'ятайте мене <input type="checkbox" id="check" name="save"> </label>
+        <input type="submit" value="Вхід" id="login" name="login">
+    </div>
+
+</form>
+
+</body>
+</html>

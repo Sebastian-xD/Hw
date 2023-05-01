@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+.Select{
+    color:#3D6FB4;
+}
+header{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+    color: #7A7070;
+    font-size: 4vh;
+    margin:7vh;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    width: 100vw;
+    height: 75vh;
+}
+p{
+    font-size: 35px;
+    margin: 50px 200px;
+}
+h1{
+    font-size: 70px;
+    margin: 50px 200px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30vh;
+}
+button{
+    width: 150px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 16px;
+}
+#red{
+    background: #ECBCBC;
+}

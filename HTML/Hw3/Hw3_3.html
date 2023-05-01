@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw3</title>
+  <style>
+    #top{
+      background-color: aqua;
+      width: 100vw;
+      height: 100vh;
+      font-size: 4vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #midle{
+      background-color: green;
+      width: 100vw;
+      height: 100vh;
+      font-size: 4vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    #down{
+      background-color: indianred;
+      width: 100vw;
+      height: 100vh;
+      font-size: 4vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    body,h1{
+      margin: 0;
+      padding: 0;
+    }
+    .uparrow{
+      background-image: url("https://cdn-icons-png.flaticon.com/512/4315/4315713.png");
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      margin: 5vh;
+
+    }
+    .downarrow{
+      background-image: url("https://cdn-icons-png.flaticon.com/512/4315/4315492.png");
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      margin: 5vh;
+    }
+    p{
+      margin: 1vw 10vh;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="top">
+    <h1>Sectoin Title</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque dolor, enim excepturi fuga laboriosam porro voluptate. Aliquam, animi, autem doloremque fugit ipsam ipsum, officiis optio praesentium recusandae sunt vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur assumenda blanditiis ducimus, earum enim incidunt ipsa laborum maiores neque nobis nulla obcaecati odio sed sequi temporibus ut, velit veniam.
+    </p>
+    <a class="downarrow" href="#midle"></a>
+  </div>
+
+  <div id="midle">
+    <a class="uparrow" href="#top"></a>
+    <h1>Sectoin Title</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime nobis quidem saepe velit. Aliquid, dicta ea eligendi esse eveniet iusto laboriosam laudantium porro quaerat quasi ratione repellat veritatis voluptas?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum esse maxime, nisi non numquam quas quos. A at dolor eveniet, molestiae perferendis placeat quisquam reprehenderit. Possimus rerum sequi voluptate voluptatem.
+    </p>
+    <a class="downarrow" href="#down"></a>
+  </div>
+
+  <div id="down">
+    <a class="uparrow" href="#midle"></a>
+    <h1>Sectoin Title</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat porro provident reiciendis repudiandae. Aspernatur cupiditate dolorum ea hic impedit nesciunt odio qui soluta? Autem enim natus quod rerum voluptates. Architecto.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eaque facilis laboriosam laudantium maxime, odit quo repellat temporibus veniam. Beatae eos ex labore quia temporibus. Est excepturi id magnam nesciunt.
+    </p>
+
+  </div>
+
+
+
+</body>
+</html>
