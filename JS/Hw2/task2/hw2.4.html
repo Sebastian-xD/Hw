@@ -11,12 +11,47 @@
 
 <script>
     // Логічні розгалуження:
-    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день
+    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня
+    //   і на екрані відображається інфа що заплановано на цей день
     //   (можна замість плану на день, назву дня англійською).
 
+    let week = +prompt('Ведіть порядковий номер дня тижня')
+    console.log(week);
 
+    switch (week){
+        case 1:
+            document.write('<div>Monday Лекція</div>')
+            console.log('Monday Лекція')
+            break;
+        case 2:
+            document.write('<div>Tuesday Обговорення Дз</div>')
+            console.log('Tuesday Обговорення Дз')
+            break;
+        case 3:
+            document.write('<div>Wednesday Лекція</div>')
+            console.log('Wednesday Лекція')
+            break;
+        case 4:
+            document.write('<div>Thursday Обговорення Дз</div>')
+            console.log('Thursday Обговорення Дз')
+            break;
+        case 5:
+            document.write('<div>Friday Консультаці</div>')
+            console.log('Friday Консультаці')
+            break;
+        case 6:
+            document.write('<div>Saturday Англійська</div>')
+            console.log('Saturday Англійська')
+            break;
+        case 7:
+            document.write('<div>Sunday Вихідний</div>')
+            console.log('Sunday Вихідний')
+            break;
+        default:
+            document.write('<div>Невірний день</div>')
+            console.log('Невірний день')
 
-
+    }
 
 
 </script>
