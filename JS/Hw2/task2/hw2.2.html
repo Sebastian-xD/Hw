@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>hw2</title>
 </head>
 <body>
 
@@ -17,16 +17,16 @@
 let time = +prompt('Визначеня четверті години (Ведіть число від 0-59)')
     console.log(time);
 
-   if (time <=15) {
+   if (time >= 0 && time <=15 ) {
             document.write('<div>Перша четверть</div>')
             console.log('Перша четверть')
-    } else if (time <=30) {
+    } else if (time >= 16 && time <= 30) {
         document.write('<div>Друга четверть</div>')
         console.log('Друга четверть')
-    } else if (time <=45) {
+    } else if (time >=31 && time <=45) {
         document.write('<div>Третя четверть</div>')
         console.log('Третя четверть')
-    } else if (time <=59) {
+    } else if (time >= 46 && time <=59) {
         document.write('<div>Четверта четверть</div>')
         console.log('Четверта четверть')
     } else {
