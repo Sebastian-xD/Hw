@@ -15,8 +15,24 @@
     //    Потрібно знайти та вивести максимальне число з тих двох .
     //    Також потрібно врахувати коли введені рівні числа.
 
+    let number1 = +prompt('Ведіть перше число');
+    let number2 = +prompt('Ведіть друге число');
+    console.log(number1);
+    console.log(number2);
 
-
+    if (number1 > number2){
+        document.write('<div>Перше число більше</div>')
+        console.log(number1,"Це число більше");
+    }else if (number1 < number2){
+        document.write('<div>Друге число більше</div>')
+        console.log(number2,"Це число більше");
+    }else if (number1 === number2){
+        document.write('<div>Вони рівнозначні</div>')
+        console.log(number1,"Вони рівнозначні");
+    }else{
+        document.write('<div>Щось пішло не так)</div>')
+        console.log(number1,"Щось пішло не так)");
+    }
 
 
 </script>
