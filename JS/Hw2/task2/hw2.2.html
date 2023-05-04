@@ -17,11 +17,7 @@
 let time = +prompt('Визначеня четверті години (Ведіть число від 0-59)')
     console.log(time);
 
-    if (time <=-1 ) {
-        document.write('<div>Не вірне число</div>')
-        console.log('Не вірне число')
-    }
-    else if (time <=15) {
+   if (time <=15) {
             document.write('<div>Перша четверть</div>')
             console.log('Перша четверть')
     } else if (time <=30) {
