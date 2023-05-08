@@ -26,12 +26,11 @@
   ];
 
   for (let i = 0; i < coursesAndDurationArray.length; i++) {
+      if (coursesAndDurationArray[i].monthDuration > 5) {
+          console.log(`Курс "${coursesAndDurationArray[i].title}" триває більше 5 місяців. Супер!`);
+      }
   }
-  if(coursesAndDurationArray[i]){
-      console.log("God");
-  }else{
-      console.log('noGod');
-  }
+
 
 
 </script>
