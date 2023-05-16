@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw4</title>
+</head>
+<body>
+
+<script>
+//- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    function areaCalculator(a, b) {
+        return a * b;
+    }
+
+    let a = areaCalculator(2,5);
+    document.write(`<li>${a}</li>`);
+    document.write(`</br>`);
+
+//- створити функцію яка обчислює та повертає площу кола з радіусом r
+    function calculatesRadius(r) {
+        return Math.PI * r ** 2;
+    }
+
+    let b = calculatesRadius(2);
+    document.write(`<li>${b}</li>`);
+    document.write(`</br>`);
+
+//- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    function cylinderCylinder(h, r) {
+        return Math.PI * 2 * r * h;
+    }
+
+    let c = cylinderCylinder(2,10);
+    document.write(`<li>${c}</li>`);
+    document.write(`</br>`);
+//- створити функцію яка приймає масив та виводить кожен його елемент
+
+    function printArrayElements(arr) {
+        for (let i = 0; i < arr.length; i++) {
+       document.write(`<li> ${arr[i]} </li>`)
+        }
+    }
+
+    let d = printArrayElements([1,2,3,4,5]);
+
+//- створити функцію яка створює параграф з текстом. Текст задати через аргумент
+
+    function creatorText(textContent){
+        document.write("<ul>");
+        document.write("<li>" + textContent + "</li>");
+        document.write("</ul>");
+        };
+
+    creatorText(`1234asd`);
+
+// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+// Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+
+    function createList(textContent,tag) {
+    document.write("<ul>");
+    for (let i = 1; i <=tag; i++) {
+        document.write(`<li> ${textContent} ${i} </li>`);
+    }
+    document.write("</ul>");
+    }
+
+    createList(`1234asd`,4);
+
+//- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+    function array(arr) {
+        document.write("<ul>");
+    for (let i = 0; i < arr.length; i++) {
+        document.write("<li>" + arr[i] + "</li>");
+    }
+        document.write("</ul>");
+    }
+
+    let myArray  = [1,2,'tsa','fgr',true,false];
+    array(myArray)
+
+//- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+    function objects(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let obj = arr[i];
+        document.write("<ul>");
+        document.write("<li>id: " + obj.id + "</li>");
+        document.write("<li>name: " + obj.name + "</li>");
+        document.write("<li>age: " + obj.age + "</li>");
+        document.write("</ul>");
+    }
+    }
+
+    let users = [
+    { id: 1,name:"John",age:25},
+    { id: 2,name:"Mary",age:30},
+    { id: 3,name:"Bob",age:20},
+    ];
+    objects(users)
+
+
+//- створити функцію яка повертає найменьше число з масиву
+
+function leastNamber(arr) {
+    let least = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < least) {
+            least = arr[i];
+        }
+    }
+    return least;
+}
+
+    let nambers = [10,2,5,8,3];
+    let least = leastNamber(nambers);
+    document.write("Найменьше число з масиву: " + least);
+    document.write(`</br>`);
+// - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+
+    function sum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) sum += arr[i];
+        return sum;
+    }
+
+    let arrs = [1, 2, 10];
+    let total = sum(arrs);
+    document.write("Сума елементів масиву: " + total);
+    document.write(`</br>`);
+//- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+    function swap(arr, index1, index2) {
+    let temp = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = temp;
+    return arr;
+}
+
+    console.log(swap([11, 22, 33, 44,55,66,77], 0, 6));
+
+
+//- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+
+    function exchange(sumUAH, currencyValues, exchangeCurrency) {
+    let exchangeRate = 0;
+
+    for (let i = 0; i < currencyValues.length; i++) {
+        if (currencyValues[i].currency === exchangeCurrency) {
+            exchangeRate = currencyValues[i].value;
+            break;
+        }
+    }
+    return exchangeRate === 0 ? 0 : sumUAH / exchangeRate;
+    }
+
+
+    let currencyValues = [
+    { currency: 'USD', value: 40 },
+    { currency: 'EUR', value: 42 }
+    ];
+
+    console.log(exchange(10000, currencyValues, 'EUR'));
+
+
+
+</script>
+
+</body>
+</html>
