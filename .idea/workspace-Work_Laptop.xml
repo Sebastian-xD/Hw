@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bfd8b9b-abec-4cbd-bbc9-793e09e77106" name="Changes" comment="create directory hw3" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2OHXTkDVQA9pATbq5orciaeUH6J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Apmik/OneDrive/Рабочий стол/hw&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Apmik\OneDrive\Рабочий стол\hw\JS\Hw2\task1" />
+      <recent name="C:\Users\Apmik\OneDrive\Рабочий стол\hw\HTML" />
+      <recent name="C:\Users\Apmik\OneDrive\Рабочий стол\hw1\.idea" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bfd8b9b-abec-4cbd-bbc9-793e09e77106" name="Changes" comment="" />
+      <created>1681218490282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681218490282</updated>
+      <workItem from="1681218491279" duration="365000" />
+      <workItem from="1681334428760" duration="10736000" />
+      <workItem from="1681397165387" duration="5824000" />
+      <workItem from="1681404568308" duration="50000" />
+      <workItem from="1681753415962" duration="3133000" />
+      <workItem from="1681757225032" duration="35000" />
+      <workItem from="1681772288171" duration="10393000" />
+      <workItem from="1681816419135" duration="7733000" />
+      <workItem from="1681825431417" duration="479000" />
+      <workItem from="1681923052116" duration="573000" />
+      <workItem from="1682366113775" duration="5330000" />
+      <workItem from="1682410841121" duration="13326000" />
+      <workItem from="1682583618922" duration="9590000" />
+      <workItem from="1682626767962" duration="108000" />
+      <workItem from="1682772194452" duration="68000" />
+      <workItem from="1682967099864" duration="451000" />
+      <workItem from="1682976855502" duration="30000" />
+      <workItem from="1682978103794" duration="6966000" />
+      <workItem from="1683025814792" duration="2527000" />
+      <workItem from="1683028661227" duration="1080000" />
+      <workItem from="1683036365181" duration="344000" />
+      <workItem from="1683037880802" duration="624000" />
+      <workItem from="1683144603096" duration="16935000" />
+      <workItem from="1683200473964" duration="4601000" />
+      <workItem from="1683227236393" duration="2074000" />
+      <workItem from="1683305052756" duration="3308000" />
+      <workItem from="1683564162170" duration="1330000" />
+      <workItem from="1683565883071" duration="1202000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1682979460312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682979460312</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Hw1">
+      <created>1682985836240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682985836240</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Hw2">
+      <created>1682985912577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682985912577</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Hw1">
+      <created>1682985962348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682985962348</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Hw1">
+      <created>1683031999211</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683031999211</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix hw4">
+      <created>1683036579422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683036579422</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Hw3 fix">
+      <created>1683036613992</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683036613992</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Hw4 fix">
+      <created>1683036634826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683036634826</updated>
+    </task>
+    <task id="LOCAL-00009" summary="hw2">
+      <created>1683148472122</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683148472122</updated>
+    </task>
+    <task id="LOCAL-00010" summary="hw2 work task2">
+      <created>1683153614161</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683153614161</updated>
+    </task>
+    <task id="LOCAL-00011" summary="hw2 work task2.5">
+      <created>1683160096538</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683160096538</updated>
+    </task>
+    <task id="LOCAL-00012" summary="hw2 work task3">
+      <created>1683163408435</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683163408435</updated>
+    </task>
+    <task id="LOCAL-00013" summary="hw2 work task3">
+      <created>1683204919396</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683204919396</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hw2 update2">
+      <created>1683229213414</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683229213414</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Hw2 Complite">
+      <created>1683566402167</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683566402167</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create directory hw3">
+      <created>1683566491184</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683566491184</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="53bee9a7-0465-403f-bffc-36000324bdcd" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="53bee9a7-0465-403f-bffc-36000324bdcd">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="Hw2" />
+    <MESSAGE value="Hw1" />
+    <MESSAGE value="fix hw4" />
+    <MESSAGE value="Hw3 fix" />
+    <MESSAGE value="Hw4 fix" />
+    <MESSAGE value="hw2" />
+    <MESSAGE value="hw2 work task2" />
+    <MESSAGE value="hw2 work task2.5" />
+    <MESSAGE value="hw2 work task3" />
+    <MESSAGE value="hw2 update2" />
+    <MESSAGE value="Hw2 Complite" />
+    <MESSAGE value="create directory hw3" />
+    <option name="LAST_COMMIT_MESSAGE" value="create directory hw3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
