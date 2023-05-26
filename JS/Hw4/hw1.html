@@ -16,8 +16,9 @@
     }
 
     let a = areaCalculator(2,5);
+    document.write("<ul>");
     document.write(`<li>${a}</li>`);
-    document.write(`</br>`);
+    document.write("</ul>");
 
 //- створити функцію яка обчислює та повертає площу кола з радіусом r
     function calculatesRadius(r) {
@@ -25,26 +26,33 @@
     }
 
     let b = calculatesRadius(2);
+    document.write("<ul>");
     document.write(`<li>${b}</li>`);
-    document.write(`</br>`);
+    document.write("</ul>");
 
 //- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
     function cylinderCylinder(h, r) {
         return Math.PI * 2 * r * h;
     }
 
-    let c = cylinderCylinder(2,10);
+    let c = cylinderCylinder(5,10);
+    document.write("<ul>");
     document.write(`<li>${c}</li>`);
-    document.write(`</br>`);
+    document.write("</ul>");
+
 //- створити функцію яка приймає масив та виводить кожен його елемент
 
     function printArrayElements(arr) {
+        document.write("<ul>");
         for (let i = 0; i < arr.length; i++) {
+
        document.write(`<li> ${arr[i]} </li>`)
+
         }
+        document.write("</ul>");
     }
 
-    let d = printArrayElements([1,2,3,4,5]);
+    let d = printArrayElements([2143,'sads',433,true]);
 
 //- створити функцію яка створює параграф з текстом. Текст задати через аргумент
 

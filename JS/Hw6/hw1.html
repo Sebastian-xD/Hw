@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw1</title>
+</head>
+<body>
+
+<script>
+
+    //- Знайти та вивести довижину настипних стрінгових значень
+
+    let string1 =  "hello world";
+    let string2 =  'lorem ipsum';
+    let string3 =  'javascript is cool';
+
+    console.log(string1.indexOf('d'))
+    console.log(string2.indexOf('m',7))
+    console.log(string3.indexOf('l'))
+
+    // - Перевести до великого регістру наступні стрінгові значення
+
+    let upperCase1 = string1.toUpperCase()
+    console.log(upperCase1)
+    let upperCase2 = string2.toUpperCase()
+    console.log(upperCase2)
+    let upperCase3 = string3.toUpperCase()
+    console.log(upperCase3)
+
+    // - Перевести до нижнього регістру настипні стрінгові значення
+
+    let lowerCase1 = upperCase1.toLowerCase()
+    console.log(lowerCase1);
+    let lowerCase2 = upperCase2.toLowerCase()
+    console.log(lowerCase2);
+    let lowerCase3 = upperCase3.toLowerCase()
+    console.log(lowerCase3);
+
+    //- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+
+    let str = ' dirty string      '
+    console.log(str.replaceAll(' ',''));
+
+
+    
+
+</script>
+
+</body>
+</html>
