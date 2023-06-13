@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+
+  // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript,
+  // зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+
+  let block = document.createElement('div');
+  let btn = document.createElement('button');
+
+
+  block.innerText = ' Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript,\n' +
+          'зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".'
+
+  btn.innerText = 'clear'
+  btn.onclick = () => block.style.display = 'none'
+  document.body.append(block,btn);
+
+</script>
+
+</body>
+</html>
