@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1><span class="line">List</span></h1>
+<div class="warp"></div>
+
+
+<script>
+
+    // зробити файл users.html
+    // з ендпоінту http://jsonplaceholder.typicode.com/user отримати всіх користувачів
+    // вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX
+    // (замість ХХХ - айді юзера)
+    // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача
+    // (всі 15 полів) отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX
+    // ХХХ - айді користувача)
+
+    let userId = new URL(location.href).searchParams.get('userId')
+
+    fetch(`http://jsonplaceholder.typicode.com/users/${userId}`)
+        .then((res) =>res.json())
+        .then((user) => {
+            let block = document.getElementsByClassName('warp')[0];
+            let ul = document.createElement('ul');
+            rec(user, ul);
+            block.appendChild(ul);
+        });
+
+    function liCreator(key, value , parent) {
+        let li = document.createElement('li');
+        li.innerHTML = `<b> ${key}:</b> ${value}`
+        parent.appendChild(li);
+    }
+
+    function ulBuilder(key, object, parent) {
+        let li = document.createElement('li');
+        let ul = document.createElement('ul');
+        li.innerHTML = `<b> ${key}:</b>`
+        parent.appendChild(li);
+        li.appendChild(ul);
+        rec(object, ul);
+    }
+
+    function rec (object, parent) {
+        for (const key in object) {
+            typeof  object[key] === 'object'
+                ? ulBuilder(key, object[key], parent)
+                : liCreator(key, object[key], parent)
+        }
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

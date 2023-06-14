@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #65856E;
+    }
+    .title{
+      display: flex;
+      justify-content: space-around;
+    }
+    .postDetails {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+    .boxs{
+      margin: 20px 0;
+    }
+    .info{
+      margin: 3px 0;
+    }
+    .postInfo {
+      margin: 5px;
+    }
+    .postInfo b {
+      font-weight: bold;
+    }
+    .postInfo p {
+      margin: 5px 5px;
+    }
+    .postComments {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .postComments .comment {
+      width: calc(50% - 10px);
+      margin: 5px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .postComments .comment p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<h1 class="title">Post Details</h1>
+<div id="postDetailsContainer"></div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const postId = urlParams.get('postId');
+
+  fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+          .then(response => response.json())
+          .then(post => {
+            const postContainer = document.getElementById('postDetailsContainer');
+
+            const postDetails = document.createElement('div');
+            postDetails.className = 'postDetails';
+            postDetails.innerHTML = `
+          <p class="postInfo"><b>ID:</b> ${post.id}</p>
+          <p class="postInfo"><b>Title:</b> ${post.title}</p>
+          <p class="postInfo"><b>Body:</b> ${post.body}</p>
+          <div id="postComments"></div>
+        `;
+            postContainer.appendChild(postDetails);
+
+            fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+                    .then(response => response.json())
+                    .then(comments => {
+                      const postCommentsContainer = document.getElementById('postComments');
+
+                      comments.forEach(comment => {
+                        const commentBlock = document.createElement('div');
+                        commentBlock.className = 'comment';
+                        commentBlock.innerHTML = `<div class="boxs">
+                <p class="info"><b>Name:</b> ${comment.name}</p>
+                <p class="info"><b>Email:</b> ${comment.email}</p>
+                <p class="info"><b>Body:</b> ${comment.body}</p></div>`;
+                        postCommentsContainer.appendChild(commentBlock);
+                      });
+                    });
+          });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

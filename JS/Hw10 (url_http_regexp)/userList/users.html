@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1><span class="line">List</span></h1>
+<div class="warp"></div>
+
+
+<script>
+
+    // зробити файл users.html
+    // з ендпоінту http://jsonplaceholder.typicode.com/users отримати всіх користувачів
+    //     вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX (замість ХХХ - айді юзера)
+    // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів) отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   ХХХ - айді користувача)
+
+    fetch('http://jsonplaceholder.typicode.com/users')
+        .then((res) =>res.json())
+        .then((users) => {
+            let block = document.getElementsByClassName('warp')[0];
+            for (const user of users) {
+                let userBlock = document.createElement('div');
+                userBlock.innerText = `№${user.id} ${user.name}`
+                block.appendChild(userBlock);
+
+                let button = document.createElement('button');
+                button.innerText = 'info';
+                userBlock.appendChild(button);
+
+                button.onclick = () => {
+                    location.href = `../userInfo/info.html/?userId=${user.id}`
+                }
+            }
+        })
+
+
+</script>
+</body>
+</html>
