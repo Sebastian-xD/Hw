@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,116 +8,131 @@
   <title>User Details</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #65856E;
+      text-align: center;
+      background-color: #8fbc8f;
     }
-    .title{
-      display: flex;
-      justify-content: space-around;
-    }
-    .userDetails {
-      width: 90%;
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 50px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-    }
+
     .userInfo {
-      margin: 3px;
-      display: flex;
-      justify-content: center;
+      margin-top: 50px;
+      background-color: #65856E;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      border: #3D6FB4 2px solid;
+      border-radius: 50px;
     }
-    .userInfo b {
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
+    .userInfo h2 {
+      margin-top: 0;
     }
+
     .userInfo p {
       margin: 5px 0;
     }
-    .userInfo a {
 
-    }
-    .userPosts {
-      margin-top: 20px;
-    }
-    .userPosts p {
-      margin: 5px 0;
-    }
-    .userPosts a {
+    .postsBoxs {
       display: flex;
-      justify-content: space-around;
-      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .postBlock {
+      flex: 0 0 15%;
+      margin: 20px;
+      background-color: #65856E;
+      padding: 20px;
+      box-sizing: border-box;
+      border: #3D6FB4 2px solid;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .postBlock a {
       text-decoration: none;
-      color: #337ab7;
+      color: #fff;
+      background-color: #337ab7;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 5px;
       font-weight: bold;
     }
-    .userPosts a:hover {
-      text-decoration: underline;
+
+    .postBlock a:hover {
+      background-color: #23527c;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #postsBtn {
+      text-decoration: none;
+      color: #fff;
+      background-color: #337ab7;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 5px;
+      font-weight: bold;
+    }
+
+    #postsBtn:hover {
+      background-color: #23527c;
     }
   </style>
 </head>
 <body>
-<h1 class="title">User Details</h1>
-<div id="userDetailsContainer"></div>
+<div id="userInfoContainer"></div>
+<h2>Posts:</h2>
+<div id="postsBoxs" class="postsBoxs hidden"></div>
+<button id="postsBtn">Show Posts</button>
 
 <script>
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const userId = urlParams.get('userId');
+  let urlParams = new URLSearchParams(window.location.search),
+          userId = urlParams.get('userId');
 
   fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
           .then(response => response.json())
           .then(user => {
+            let userInfoContainer = document.getElementById('userInfoContainer'),
+                    userBlock = document.createElement('div');
+            userBlock.className = 'userInfo';
+            userBlock.innerHTML = `<p><b>ID:</b> ${user.id}</p>
+            <h2>${user.name}</h2>
+            <p><b>Username:</b> ${user.username}</p>
+            <p><b>Email:</b> ${user.email}</p>
+            <p><b>Address:</b></p>
+            <p><b>Street:</b> ${user.address.street}, <b>Suite:</b> ${user.address.suite}, <b>City:</b> ${user.address.city}, <b>Zipcode:</b> ${user.address.zipcode}</p>
+            <p><b>Geo:</b> Lat: ${user.address.geo.lat}, Lng: ${user.address.geo.lng}</p>
+            <p><b>Phone:</b> ${user.phone}</p>
+            <p><b>Website:</b> ${user.website}</p>
+            <p><b>Company:</b></p>
+            <p><b>Name:</b> ${user.company.name}, <b>Catch Phrase:</b> ${user.company.catchPhrase}, <b>BS:</b> ${user.company.bs}</p>`;
+            userInfoContainer.appendChild(userBlock);
 
-            const userContainer = document.getElementById('userDetailsContainer');
-            const userDetails = document.createElement('div');
+            let showPostsBtn = document.getElementById('postsBtn'),
+                    postsContainer = document.getElementById('postsBoxs');
 
-            userDetails.className = 'userDetails';
-            userDetails.innerHTML = `
-          <p class="userInfo"><b>ID:</b> ${user.id}</p>
-          <p class="userInfo"><b>Name:</b> ${user.name}</p>
-          <p class="userInfo"><b>Email:</b> ${user.email}</p>
-          <p class="userInfo"><b>Phone:</b> ${user.phone}</p>
-          <p class="userInfo"><b>Website:</b> ${user.website}</p>
-          <div id="userPosts"></div>`;
+            showPostsBtn.addEventListener('click', () => {
+              showPostsBtn.classList.add('hidden');
+              postsContainer.classList.remove('hidden');
 
-            userContainer.appendChild(userDetails);
 
-            fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
-                    .then(response => response.json())
-                    .then(posts => {
-
-                      const userPostsContainer = document.getElementById('userPosts');
-                      const userPosts = document.createElement('div');
-
-                      userPosts.className = 'userPosts';
-                      userPosts.innerHTML = '<h2 class="title">Posts</h2>';
-
-                      posts.forEach(post => {
-
-                        const postLink = document.createElement('a');
-
-                        postLink.href = `post-details.html?postId=${post.id}`;
-                        postLink.textContent = post.title;
-                        userPosts.appendChild(postLink);
+              fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
+                      .then(response => response.json())
+                      .then(posts => {
+                        posts.forEach(post => {
+                          let postBlock = document.createElement('div');
+                          postBlock.className = 'postBlock';
+                          postBlock.innerHTML = `<h3>${post.title}</h3>
+                            <a href="post-details.html?postId=${post.id}">View Details</a>`;
+                          postsContainer.appendChild(postBlock);
+                        });
                       });
-
-                      userPostsContainer.appendChild(userPosts);
-                    });
+            });
           });
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
