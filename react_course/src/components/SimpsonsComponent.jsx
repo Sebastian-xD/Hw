@@ -1,4 +1,4 @@
-const SimpsonsComponent = (props) => {
+const SimpsonsComponent = () => {
     const simpsons = [
         {
             name: 'Bart',

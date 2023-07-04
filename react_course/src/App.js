@@ -8,11 +8,11 @@ function App() {
       <>
           <h2> Simpsons components</h2>
           <div className={'SimpsonsComponents'}>
-              <SimpsonsComponent person/>
+              <SimpsonsComponent/>
           </div>
           <h2>Rick And Morty components</h2>
           <div className={'RickAndMortyComponents'}>
-              <RickAndMortyComponent person/>
+              <RickAndMortyComponent/>
           </div>
 
       </>
