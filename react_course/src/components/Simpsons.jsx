@@ -1,4 +1,4 @@
-const SimpsonsComponent = () => {
+const Simpsons = () => {
     const simpsons = [
         {
             name: 'Bart',
@@ -50,4 +50,4 @@ const SimpsonsComponent = () => {
         </div>
     );
 };
-export default SimpsonsComponent;
+export default Simpsons;

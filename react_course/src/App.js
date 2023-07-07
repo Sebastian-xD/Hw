@@ -1,18 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import SimpsonsComponent from "./components/SimpsonsComponent";
-import RickAndMortyComponent from "./components/RickAndMortyComponent";
+import PostList from "./components/Post";
+import SpaceX from "./components/SpaceX";
 
 function App() {
   return (
       <>
-          <h2> Simpsons components</h2>
-          <div className={'SimpsonsComponents'}>
-              <SimpsonsComponent/>
+          <div>
+              < PostList />
           </div>
-          <h2>Rick And Morty components</h2>
-          <div className={'RickAndMortyComponents'}>
-              <RickAndMortyComponent/>
+
+          <div>
+              < SpaceX />
           </div>
 
       </>
