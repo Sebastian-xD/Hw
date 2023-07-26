@@ -5,11 +5,11 @@ function App() {
   return (
       <>
           <div>
-              < PostList />
+              <PostList/>
           </div>
 
           <div>
-              < SpaceX />
+              <SpaceX/>
           </div>
       </>
   );
