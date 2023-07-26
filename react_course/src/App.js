@@ -11,7 +11,6 @@ function App() {
           <div>
               < SpaceX />
           </div>
-
       </>
   );
 }
