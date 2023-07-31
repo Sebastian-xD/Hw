@@ -1,18 +1,11 @@
-import PostList from "./components/Post";
-import SpaceX from "./components/SpaceX";
+import {CarContainer} from "./components/CarContainer/CarContainer";
 
-function App() {
-  return (
-      <>
-          <div>
-              < PostList />
-          </div>
+const App = () => {
+    return (
+        <div>
+            <CarContainer/>
+        </div>
+    );
+};
 
-          <div>
-              < SpaceX />
-          </div>
-      </>
-  );
-}
-
-export default App;
+export {App};
