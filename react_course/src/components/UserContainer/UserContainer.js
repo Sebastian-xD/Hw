@@ -1,22 +1,14 @@
-import {useEffect, useState} from "react";
-import {UserComponent} from "./UserComponent/UserComponent";
+import {useState} from "react";
+import {UserForm} from "./UserForm/UserForm";
+import {Users} from "./Users/Users";
 
-const UserContainer = ({setUser, setUserActive, userActive}) => {
+const UserContainer = () => {
     const [users, setUsers] = useState([]);
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users').then(value => value.json()).then(value => setUsers(value))
-    }, [])
-
     return (
         <div>
-            {users.map(user => <UserComponent
-                key={user.id}
-                user={user}
-                setUser={setUser}
-                setUserActive={setUserActive}
-                userActive={userActive}
-            />)}
+            <UserForm setUsers={setUsers}/>
+            <hr/>
+            <Users users={users} setUsers={setUsers}/>
         </div>
     );
 };
